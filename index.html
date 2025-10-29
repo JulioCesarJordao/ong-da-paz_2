@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONG da Paz — Início</title>
+  <meta name="description" content="ONG da Paz — projetos, voluntariado, impacto social">
+  <!-- Google Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Main stylesheet (coloque em assets/css/main.css conforme combinado) -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header" role="banner">
+    <div class="container nav" aria-label="Cabeçalho principal">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="ONG da Paz" />
+        
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav__menu" role="menubar">
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="#home">Início</a></li>
+
+          <li class="nav__item" role="none" aria-expanded="false">
+            <button class="nav__link" aria-haspopup="true" aria-expanded="false" aria-controls="projectsDropdown">Projetos ▾</button>
+
+            <div id="projectsDropdown" class="nav__dropdown" role="menu" aria-label="Submenu de projetos">
+              <a class="nav__link" role="menuitem" href="#health">Saúde</a>
+              <a class="nav__link" role="menuitem" href="#education">Educação</a>
+              <a class="nav__link" role="menuitem" href="#community">Comunidade</a>
+            </div>
+          </li>
+
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="sobre.html">Sobre</a></li>
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="contato.html">Contato</a></li>
+        </ul>
+
+        <button class="nav__toggle" aria-label="Abrir menu" aria-controls="mobileNav" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- mobile panel (toggle via JS) -->
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+        <li><a class="nav__link" href="#home">Início</a></li>
+        <li>
+          <details>
+            <summary class="nav__link">Projetos</summary>
+            <div style="display:flex;flex-direction:column;padding:8px;gap:8px;">
+              <a class="nav__link" href="#health">Saúde</a>
+              <a class="nav__link" href="#education">Educação</a>
+              <a class="nav__link" href="#community">Comunidade</a>
+            </div>
+          </details>
+        </li>
+        <li><a class="nav__link" href="#about">Sobre</a></li>
+        <li><a class="nav__link" href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="container">
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div>
+          <h1 id="heroTitle" class="h-display">Transformando vidas com ações locais</h1>
+          <p class="body">A ONG da Paz conecta voluntariado, projetos e doações para gerar impacto mensurável nas comunidades. Conheça nossos projetos, participe como voluntário ou doe para ampliar nosso alcance.</p>
+
+          <div class="mt-2 row">
+            <button class="btn btn-primary" id="learnMoreBtn">Conhecer projetos</button>
+            <button class="btn btn-ghost" id="donateBtn">Doar</button>
+          </div>
+
+          <div class="mt-3">
+            <span class="badge badge--primary">Impacto</span>
+            <span class="tag">Educação</span>
+            <span class="tag">Saúde</span>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <img class="card__media" src="assets/img/projects/example.jpg" alt="Equipe em ação">
+            <div>
+              <h3 class="card__title">Projeto Comunidade Ativa</h3>
+              <p class="card__meta">Parceiros • 2025</p>
+              <p class="small">Oficinas comunitárias, saúde preventiva e acompanhamento familiar.</p>
+              <div class="mt-2 row">
+                <button class="btn btn-primary">Ver detalhes</button>
+                <button class="btn btn-ghost">Voluntariar</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ALERT EXAMPLE -->
+      <div class="mt-3">
+        <div class="alert alert--info" role="status">Novidade: inscrição para o mutirão de saúde aberta até 10 de novembro.</div>
+      </div>
+
+      <!-- PROJECTS GRID -->
+      <section aria-labelledby="projectsTitle" class="mt-4">
+        <h2 id="projectsTitle" class="h-xl">Projetos em destaque</h2>
+        <div class="cards-grid">
+
+          <article class="card" aria-labelledby="p1">
+            <img class="card__media" src="assets/img/projects/proj1.jpg" alt="Projeto educação">
+            <h3 id="p1" class="card__title">Apoio Educacional</h3>
+            <p class="card__meta">Educação • 2024</p>
+            <p class="small">Aulas de reforço e kit escolar para crianças em áreas vulneráveis.</p>
+            <div class="row mt-2">
+              <button class="btn btn-primary">Participar</button>
+              <button class="btn btn-ghost">Compartilhar</button>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="p2">
+            <img class="card__media" src="assets/img/projects/proj2.jpg" alt="Projeto saúde">
+            <h3 id="p2" class="card__title">Mutirão de Saúde</h3>
+            <p class="card__meta">Saúde • 2025</p>
+            <p class="small">Atendimentos básicos, campanhas de vacinação e prevenção.</p>
+            <div class="row mt-2">
+              <button class="btn btn-primary">Inscreva-se</button>
+              <button class="btn btn-ghost">Saiba mais</button>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="p3">
+            <img class="card__media" src="assets/img/projects/proj3.jpg" alt="Projeto hortas comunitárias">
+            <h3 id="p3" class="card__title">Hortas Comunitárias</h3>
+            <p class="card__meta">Sustentabilidade • 2024</p>
+            <p class="small">Capacitação, insumos e geração de renda local.</p>
+            <div class="row mt-2">
+              <button class="btn btn-primary">Apoiar</button>
+              <button class="btn btn-ghost">Detalhes</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      
+
+      <!-- FOOTER -->
+      <footer class="site-footer mt-4" role="contentinfo">
+        <div class="container">
+          <div class="row space-between items-center">
+            <div>
+              <p class="caption">© ONG da Paz — Todos os direitos reservados</p>
+            </div>
+            <div>
+              <nav aria-label="Redes sociais">
+                <a class="nav__link" href="#">Instagram</a>
+                <a class="nav__link" href="#">Facebook</a>
+                <a class="nav__link" href="#">LinkedIn</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div> <!-- /container -->
+  </main>
+
+  <!-- TOASTS CONTAINER -->
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- MODAL TEMPLATE (hidden) -->
+  <template id="modalTemplate">
+    <div class="modal-backdrop" role="dialog" aria-modal="true">
+      <div class="modal">
+        <h2 class="h-lg">Confirmação</h2>
+        <p class="body">Obrigado! Sua ação será processada.</p>
+        <div class="row mt-2">
+          <button class="btn btn-primary" data-action="close">OK</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="assets/js/site.js"></script>
+
+</body>
+</html>

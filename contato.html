@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contato — ONG da Paz</title>
+  <meta name="description" content="Fale conosco — ONG da Paz. Voluntariado, doações e parcerias.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav" aria-label="Cabeçalho principal">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="ONG da Paz" />
+        
+      </div>
+
+            <nav aria-label="Navegação principal">
+        <ul class="nav__menu" role="menubar">
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="index.html">Início</a></li>
+
+          <li class="nav__item" role="none" aria-expanded="false">
+            <button class="nav__link" aria-haspopup="true" aria-expanded="false" aria-controls="projectsDropdown">Projetos ▾</button>
+
+            <div id="projectsDropdown" class="nav__dropdown" role="menu" aria-label="Submenu de projetos">
+              <a class="nav__link" role="menuitem" href="#health">Saúde</a>
+              <a class="nav__link" role="menuitem" href="#education">Educação</a>
+              <a class="nav__link" role="menuitem" href="#community">Comunidade</a>
+            </div>
+          </li>
+
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="sobre.html">Sobre</a></li>
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="contato.html">Contato</a></li>
+        </ul>
+
+        <button class="nav__toggle" aria-label="Abrir menu" aria-controls="mobileNav" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+        <li><a class="nav__link" href="index.html">Início</a></li>
+        <li><a class="nav__link" href="projetos.html">Projetos</a></li>
+        <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+        <li><a class="nav__link" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section class="mt-4" aria-labelledby="contactHero">
+      <h1 id="contactHero" class="h-xl">Quer falar com a gente?</h1>
+      <p class="body">Estamos aqui para ouvir — seja para tirar dúvidas, propor parcerias ou apoiar nossos projetos. Preencha o formulário ou use os contatos diretos abaixo.</p>
+    </section>
+
+    <section class="grid mt-3" aria-labelledby="contactFormTitle">
+      <div class="col-7">
+        <h2 id="contactFormTitle" class="h-lg">Envie uma mensagem</h2>
+        <form id="contactFullForm" novalidate>
+          <div class="grid">
+            <label class="form-field col-6">
+              <span>Nome completo</span>
+              <input name="name" type="text" required placeholder="Seu nome completo">
+              <small class="form-error sr-only">Nome é obrigatório</small>
+            </label>
+
+            <label class="form-field col-6">
+              <span>Telefone (opcional)</span>
+              <input name="phone" type="tel" placeholder="(11) 9xxxx-xxxx">
+            </label>
+
+            <label class="form-field col-6">
+              <span>Email</span>
+              <input name="email" type="email" required placeholder="seu@exemplo.com">
+              <small class="form-error sr-only">Email inválido</small>
+            </label>
+
+            <label class="form-field col-6">
+              <span>Assunto</span>
+              <select name="subject">
+                <option value="">-- selecione --</option>
+                <option value="volunteer">Voluntariado</option>
+                <option value="donation">Doação</option>
+                <option value="partnership">Parcerias</option>
+                <option value="other">Outro</option>
+              </select>
+            </label>
+
+            <label class="form-field col-12">
+              <span>Mensagem</span>
+              <textarea name="message" rows="6" required placeholder="Conte-nos como podemos ajudar"></textarea>
+              <small class="form-error sr-only">Mensagem obrigatória</small>
+            </label>
+
+            <div class="col-12 row">
+              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+              <button type="reset" class="btn btn-ghost">Limpar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <aside class="col-5">
+        <div class="card">
+          <h3 class="h-lg">Nossos contatos</h3>
+          <p class="small">Telefone: <a href="tel:+551199999999">(11) 99999-9999</a></p>
+          <p class="small">Email: <a href="mailto:contato@ongdapaz.org">contato@ongdapaz.org</a></p>
+          <p class="small">Endereço: Rua da Esperança, 123 — Centro, Cidade — UF</p>
+
+          <div class="mt-2">
+            <h4 class="small">Horário de atendimento</h4>
+            <p class="caption">Seg — Sex: 9h — 17h</p>
+          </div>
+
+          <div class="mt-3">
+            <button class="btn btn-primary" id="volunteerBtn">Quero ser voluntário</button>
+            <button class="btn btn-ghost" id="donatePageBtn">Quero doar</button>
+          </div>
+        </div>
+
+        
+      </aside>
+    </section>
+
+    <section class="mt-4" aria-labelledby="faqTitle">
+      <p></p>
+      <h2 id="faqTitle" class="h-lg">Perguntas frequentes</h2>
+      <div class="card mt-2">
+        <details>
+          <summary class="h-lg">Como me tornar voluntário?</summary>
+          <div class="mt-2"><p class="body">Preencha o formulário acima e selecione "Voluntariado" no assunto — entraremos em contato com as próximas etapas.</p></div>
+        </details>
+        <details>
+          <summary class="h-lg">Como doar materiais?</summary>
+          <div class="mt-2"><p class="body">Entre em contato pelo email para combinar logística de recebimento de doações e pontos de entrega.</p></div>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer mt-4" role="contentinfo">
+    <div class="container">
+      <div class="row space-between items-center">
+        <div>
+          <p class="caption">© ONG da Paz — Todos os direitos reservados</p>
+        </div>
+        <div>
+          <nav aria-label="Redes sociais">
+            <a class="nav__link" href="#">Instagram</a>
+            <a class="nav__link" href="#">Facebook</a>
+            <a class="nav__link" href="#">LinkedIn</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+  <template id="modalTemplate">
+    <div class="modal-backdrop" role="dialog" aria-modal="true">
+      <div class="modal">
+        <h2 class="h-lg">Obrigado!</h2>
+        <p class="body">Recebemos sua mensagem. Entraremos em contato em até 5 dias úteis.</p>
+        <div class="row mt-2"><button class="btn btn-primary" data-action="close">Fechar</button></div>
+      </div>
+    </div>
+  </template>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

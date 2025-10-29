@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projetos — ONG da Paz</title>
+  <meta name="description" content="Conheça os projetos sociais e ambientais da ONG da Paz.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="ONG da Paz" />
+      </div>
+            <nav aria-label="Navegação principal">
+        <ul class="nav__menu" role="menubar">
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="#home">Início</a></li>
+
+          <li class="nav__item" role="none" aria-expanded="false">
+            <button class="nav__link" aria-haspopup="true" aria-expanded="false" aria-controls="projectsDropdown">Projetos ▾</button>
+
+            <div id="projectsDropdown" class="nav__dropdown" role="menu" aria-label="Submenu de projetos">
+              <a class="nav__link" role="menuitem" href="#health">Saúde</a>
+              <a class="nav__link" role="menuitem" href="#education">Educação</a>
+              <a class="nav__link" role="menuitem" href="#community">Comunidade</a>
+            </div>
+          </li>
+
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="sobre.html">Sobre</a></li>
+          <li class="nav__item" role="none"><a class="nav__link" role="menuitem" href="contato.html">Contato</a></li>
+        </ul>
+
+        <button class="nav__toggle" aria-label="Abrir menu" aria-controls="mobileNav" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mt-4">
+    <h1 class="h-xl">Nossos Projetos</h1>
+    <p class="body">Conheça as iniciativas da ONG da Paz que transformam comunidades em todo o país.</p>
+
+    <section class="mt-4 cards-grid">
+      <article class="card"><img class="card__media" src="assets/img/projects/proj1.jpg" alt="Projeto Educação"><h3 class="card__title">Apoio Educacional</h3><p class="card__meta">Educação • 2024</p><p>Aulas de reforço e kits escolares para crianças em áreas vulneráveis.</p><button class="btn btn-primary mt-2">Participar</button></article>
+      <article class="card"><img class="card__media" src="assets/img/projects/proj2.jpg" alt="Projeto Saúde"><h3 class="card__title">Mutirão de Saúde</h3><p class="card__meta">Saúde • 2025</p><p>Atendimentos básicos, campanhas de vacinação e prevenção.</p><button class="btn btn-primary mt-2">Saiba mais</button></article>
+      <article class="card"><img class="card__media" src="assets/img/projects/proj3.jpg" alt="Projeto Sustentabilidade"><h3 class="card__title">Hortas Comunitárias</h3><p class="card__meta">Sustentabilidade • 2024</p><p>Capacitação e geração de renda por meio da agricultura urbana.</p><button class="btn btn-primary mt-2">Apoiar</button></article>
+    </section>
+  </main>
+
+  <footer class="site-footer mt-4">
+    <div class="container row space-between items-center">
+      <p class="caption">© ONG da Paz — Todos os direitos reservados</p>
+      <nav><a class="nav__link" href="#">Instagram</a><a class="nav__link" href="#">Facebook</a><a class="nav__link" href="#">LinkedIn</a></nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

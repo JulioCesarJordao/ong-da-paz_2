@@ -1,0 +1,61 @@
+/* layout.css - container, grid system and core layout */
+.container{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+  max-width:var(--container-max-width);
+}
+
+/* 12-column Grid System */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
+}
+.col-1  {grid-column: span 1;}
+.col-2  {grid-column: span 2;}
+.col-3  {grid-column: span 3;}
+.col-4  {grid-column: span 4;}
+.col-5  {grid-column: span 5;}
+.col-6  {grid-column: span 6;}
+.col-7  {grid-column: span 7;}
+.col-8  {grid-column: span 8;}
+.col-9  {grid-column: span 9;}
+.col-10 {grid-column: span 10;}
+.col-11 {grid-column: span 11;}
+.col-12 {grid-column: span 12;}
+
+@media (max-width: 575px){
+  .grid{ grid-template-columns: repeat(4, 1fr); }
+  .col-sm-12{ grid-column: 1 / -1; }
+}
+@media (min-width: 576px){
+  .grid{ grid-template-columns: repeat(12, 1fr); }
+}
+
+/* Flex helpers */
+.flex{display:flex}
+.flex-center{display:flex;align-items:center;justify-content:center}
+.flex-column{display:flex;flex-direction:column}
+.row{display:flex;gap:var(--gutter);flex-wrap:wrap}
+.space-between{justify-content:space-between}
+.items-center{align-items:center}
+
+/* Hero & Footer */
+.hero{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:var(--space-3);
+  padding:var(--space-4) 0;
+}
+@media(min-width:992px){
+  .hero{ grid-template-columns: 1fr 480px; align-items:center; }
+}
+
+.site-footer{
+  padding:var(--space-3) 0;
+  border-top:1px solid var(--color-neutral-300);
+  margin-top:var(--space-4);
+}
